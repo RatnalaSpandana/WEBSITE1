@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<title>page title</title>
+<style>
+body{
+background_colour:#1111
+}
+
+.forn-container{
+width: 80%;
+background-color: #222:
+box-shadow: 0 2px 15px #000;
+box-sizing:border-box;
+text-align: center;
+align-item: center;
+padding: 10px
+margin: auto;
+position: relative;
+top: 50px
+}
+
+.forn-container h1 {
+color: #fff
+width: 100%
+transition: all 0.5s;
+text-shadow: 3px 3px 6px #000;
+}
+
+.forn-container h1::before {
+position: absolute;
+content: '';
+width: 50%;
+height: 1px;
+background-color:rgb(255,255,0);
+transition:translateY(35px)
+translateX(-520px);
+}
+
+.forn container h1:hover::before {
+transform:translate(35%)
+translate(0%);
+tarnsition:.5s;
+}
+
+.forn-container .input-box {
+width: 100%;
+margin-top:25%;
+}
+
+.forn-container .input-box input[type
+="text"]
+.forn-container .input-box input{type
+="password"]
+width:80%;
+background:transparent;
+border:none;
+border-bottom:1px solid #ffff
+padding: 10px 0;
+font-size: 1.2em;
+transition:all 0.5s;
+color: rgb(255,100,0);
+}
+
+.forn-container .input-box input[type
+="text"]:focus {
+border:0px
+transform:translateY(5px);
+padding:10px
+}
+
+.forn-container .input-box input[type
+="text"]:focus::placeholder,
+.forn-container .input-box input[type
+="password"]:focus::placeholder {
+color:#ffe;
+}
+
+.forn-container .inputbox input[type
+="submit"] {
+color:#000;
+background-color:transparent;
+border: 1px solid transparent;
+padding:10px 20px;
+}
+</style>
+</head>
+<body>
+<div class="forn-container">
+<h1>Login form</h1>
+<div class="input-box">
+<input type="text" placeholder="Username">
+</div>
+<div class="input-box">
+<input type="password" placeholder="Password">
+</div>
+<div class="input-box">
+<input type="submit" value="SUBMIT">
+</div>
+</body>
+</html>

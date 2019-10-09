@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+<style>
+body {
+    background-image:url('l.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+span {
+    display: inline-block;
+    position: relative;
+    top: -22px;
+    left: 10px;
+    color: #555;
+
+    }
+    input:focus , input:valid {
+    border-bottom: 1px solid white;
+    border-size:cover;
+    transition: .4s;
+}
+input:focus + span , input:valid + span{
+    top: -55px;
+    color: dodgerblue;
+    transition: .4s linear;
+}
+span {
+    display: inline-block;
+    position: relative;
+    top: -22px;
+    left: 10px;
+    color: #555;
+
+    }
+    input:focus , input:valid {
+    border-bottom: 1px solid dodgerblue;
+    transition: .4s;
+}
+input:focus + span , input:valid + span{
+    top: -55px;
+    color: dodgerblue;
+
+
+    transition: .4s linear;
+}
+.forn-container {
+    width: 50%;
+    background-color: #222;
+    box-shadow: 0 2px 15px #000;
+    box-sizing: border-box;
+    text-align: center;
+    align-item: center;
+    padding: 50px;
+    margin: auto;
+    position: relative;
+    top: 200px;
+}
+
+.forn-container h1 {
+    color: #fff;
+    width: 100%;
+    transition: all 0.5s;
+    text-shadow: 3px 3px 6px #000;
+}
+
+.forn-container h1::before {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 1px;
+    background-color: rgb(255,255,0);
+    transition: all .5s;
+    transform: translateY(35px) translateX(-100px);
+}
+
+.forn-container h1:hover::before {
+    transform: translateY(35px) translateX(0%);
+    transition: .5s;
+}
+
+.forn-container .input-box {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.forn-container .input-box input[type="text"],
+.forn-container .input-box input[type="password"] {
+    width:100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 10px 0;
+    font-size: 1.2em;
+    transition: all 0.5s;
+    color: rgb(255,100,0);
+}
+
+.forn-container .input-box input[type="text"]:focus,
+.forn-container .input-box input[type="password"]:focus {
+    border: 0px;
+    transform: translateY(5px);
+    padding: 10px;
+}
+
+.forn-container .input-box input[type="text"]:focus::placeholder,
+.forn-container .input-box input[type="password"]:focus::placeholder {
+    color: #ffe;
+}
+
+.forn-container .input-box input[type="SUBMIT"] {
+    color: #000;
+    background-color: transparent ;
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    width: 90%;
+    font-size: 1.5em;
+    border-radius: 1px 7px;
+    transition: all .8s;
+    box-shadow: inset 0 0 8px #000;
+}
+
+.forn-container .input-box input[type="submit"]:hover {
+    background-color: rgb(0,50,0);
+    box-shadow: 0 0 1px #000;
+    color: #fff;
+    border-color: transparent ;
+}
+
+.forn-container p {
+    text-align: left;
+}
+
+.forn-container p a {
+    color: rgba(0,0,0,0.5);
+    transition: all .5s;
+}
+
+.forn-container p a:hover {
+    text-decoration: none;
+    color: rgba(0,0,0,.2);
+}
+
+#by {
+    position: relative ;
+    top: 100px;
+    font-size: 1em;
+    border: 1px solid rgb(0,60,60);
+    border-radius: 5px;
+    padding: 10px 107px;
+    color: rgb(255,255,255);
+    opacity: .8;
+    transition: all .5s;
+    filter: blur(1px);
+}
+
+#by:hover {
+    background-color: rgb(0,60,60);
+    box-shadow: 2px 2px 6px #000;
+    filter: blur(0);
+}
+</style>
+    </head>
+    <body>
+        <div class="forn-container">
+            <h1>Login Form</h1>
+            <div class="input-box">
+                <input type="text" required><span>Username</span>
+            </div>
+            <div class="input-box">
+                <input type="password" required><span>Password</span>
+            </div>
+            <div class="input-box">
+                <input type="submit" value="submit">
+            </div>
+            <p>Forgot Password ? <a href="#">Click Here</a></p>
+        </div>
+    </body>
+</html>
